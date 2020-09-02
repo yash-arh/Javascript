@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converts minutes to seconds</title>
+</head>
+<body>
+    <div>
+        <label>Enter a number</label>
+        <input type="number" id="in1"><br>
+        <button onclick="Convert()">Submit</button>
+        <p id="cnv"></p>
+    </div>
+  
+        <script>
+   
+             function Convert() 
+    {
+      var min =  document.getElementById("in1").value;
+      var answer = min * 60;
+
+    document.getElementById("cnv").innerHTML = answer;
+    }
+ 
+    </script>
+</body>
+</html>
